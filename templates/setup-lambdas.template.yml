@@ -52,7 +52,7 @@ Resources:
   LambdaZipsBucket:
     Type: AWS::S3::Bucket
     Properties:
-      BucketName: !Sub "${AWS::AccountId}-immers-day-devsecops-eks-lambda-zips-bucket"
+      S3BucketName: !Sub "${AWS::AccountId}-immers-day-devsecops-eks-lambda-zips-bucket"
 
   CopyLambdaZips:
     Type: Custom::CopyLambdaZips
